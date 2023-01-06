@@ -1,12 +1,19 @@
 import React from 'react';
-import logo from './logo.svg';
-import { Counter } from './features/counter/Counter';
+import { Container, Navbar, NavbarBrand } from 'reactstrap';
+import qclogo2 from './app/assets/logo/customcolor/full/qclogo2.png';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      hello quinlancorals!
+      <Navbar dark color='primary' sticky='top' expand='md'>
+        <Container>
+          <NavbarBrand href='/'>
+            <img src={qclogo2} alt='quinlan corals logo' />
+          </NavbarBrand>
+        </Container>
+      </Navbar>
+      I'm ready for workshop!
     </div>
   );
 }
